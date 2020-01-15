@@ -17,7 +17,7 @@ header h1 {
 .rules {
   font-size: 40px;
   text-align: center;
-  margin: 0 0 10px 0;
+  margin: 0;
   color: black;
   -webkit-text-fill-color: #FFEA00;
   -webkit-text-stroke: 2.5px black;
@@ -68,6 +68,7 @@ header h1 {
 
 #result p {
   font-size: 100px;
+  line-height: 100px;
   text-align: center;
   margin: 0;
   color: black;
@@ -78,7 +79,8 @@ header h1 {
 button {
   display: none;
   font-size: 50px;
-  padding: 0 10px;
+  line-height: 50px;
+  padding: 5px 10px;
   margin: 0 auto;
   border: 4px solid black;
   border-radius: 20px;
@@ -124,7 +126,8 @@ footer {
 
 h2, h3, h4, p {
   font-size: 40px;
-  margin: 0 10px;
+  line-height: 40px;
+  margin: 5px 10px;
   color: black;
   -webkit-text-fill-color: white;
   -webkit-text-stroke: 2.2px black;
@@ -145,6 +148,7 @@ h2, h3, h4, p {
   
   button {
     font-size: 30px;
+    line-height: 30px;
     border-radius: 10px;
     -webkit-text-stroke: 2px black;
   }
@@ -173,12 +177,12 @@ h2, h3, h4, p {
 
 @media only screen and (max-width: 420px) {
   header h1 {
-    font-size: 30px;
-    -webkit-text-stroke: 2.2px black;
+    display: none;
   }
   
   .rules {
     font-size: 25px;
+    margin: 5px 0;
     -webkit-text-stroke: 2px black;
   }
 
@@ -200,19 +204,19 @@ h2, h3, h4, p {
   
   button {
     font-size: 30px;
+    line-height: 30px;
     border-radius: 10px;
-    padding: 5px 10px 0px 10px;
     -webkit-text-stroke: 2.2px black;
   }
 
   .box {
     width: 160px;
-    height: 170px;
+    height: 160px;
     flex-direction: column;
   }
 
   h2, h3, h4, p {
     font-size: 25px;
-    margin: 5px 10px 0 10px;
+    line-height: 25px;
   }
 }
