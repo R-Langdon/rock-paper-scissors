@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Rock, Paper or Scissors</title>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Rock, Paper or Scissors?</h1>
+      <p class="rules">First to 5 points wins</p>
+    </header>
+    <section id="choices">
+      <div id="ROCK" class="choice rock"></div>
+      <div id="PAPER" class="choice paper"></div>
+      <div id="SCISSORS" class="choice scissors"></div>
+    </section>
+    <section id="result">
+      <p></p>
+      <button>restart</button>
+    </section>
+    <footer>
+      <section class="player box">
+        <div class="playerSelect">
+          <h2>Player Chose :</h2>
+          <h3 id="playerChoice"></h3>
+        </div>
+        <div class="playerScore">
+          <h4>Score :</h4>
+          <p>0</p>
+        </div>
+      </section>
+      <section class="comp box">
+        <div class="compSelect">
+          <h2>Computer Chose :</h2>
+          <h3 id="compChoice"></h3>
+        </div>
+        <div class="compScore">
+          <h4>Score :</h4>
+          <p>0</p>
+        </div>
+      </section>
+    </footer>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
