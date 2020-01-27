@@ -29,16 +29,16 @@ header h1 {
   width: fit-content;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 185px 1fr;
+  grid-template-rows: 295px 1fr;
   grid-gap: 5px;
   justify-items: center;
 }
 
 .choice {
-  width: 200px;
-  height: 200px;
-  border: 5px solid black;
-  border-radius: 100px;
+  width: 320px;
+  height: 320px;
+  border: 7px solid black;
+  border-radius: 160px;
   background-size: 100%;
 }
 
@@ -140,7 +140,18 @@ h2, h3, h4, p {
 
 /*MEDIA QUERY FOR TABLETS*/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1366px) {
+  #choices {
+    grid-template-rows: 185px 1fr;
+  }
+  
+  .choice {
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 100px;
+  }
+
   #result p {
     font-size: 70px;
     line-height: 70px;
@@ -196,6 +207,7 @@ h2, h3, h4, p {
   .choice {
     width: 130px;
     height: 130px;
+    border: 3px solid black;
     border-radius: 65px;
   }
 
